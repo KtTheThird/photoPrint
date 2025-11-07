@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formspree Contact Form</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Order Form Container -->  
+    <div class="formContainer">
+
+        <h1>Order a Custom Photo Print</h1>
+        <p>
+            <span>IMPORTANT:</span>
+            AHHHHHHHHHHHHHHHHHHH!!!!
+        </p>
+
+        <form action="https://formspree.io/f/xwpooead" method="post" class="ord">
+
+            <!-- Name Field -->
+            <div>
+                <label for="name" class="orderName">Full Name*</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Jane Doe"
+                    required
+                >
+            </div>
+
+            <!-- Telephone Field -->
+            <div>
+                <label for="phNum" class="orderNum">Phone Number*</label>
+               
+                <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="(123)-456-7890"
+                    required
+                >
+            </div>
+
+            <!-- Photo Field -->
+            <div class="ordImg">
+                <label for="file" class="orderImg">Image for Print*</label>
+               
+                <input
+                    type="file"
+                    name="file"
+                    id="file"
+                    placeholder="(123)-456-7890"
+                    required
+                >
+            </div>
+
+            <!-- Email Field -->
+            <div>
+                <label for="email" class="orderEmail">Email Address</label>
+               
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="you@example.com"
+                >
+            </div>
+
+
+            <!-- Message Field -->
+            <div>
+                <label for="note" class="orderNotes">Extra Notes</label>
+                <textarea
+                    name="note"
+                    id="note"
+                    rows="4"
+                    placeholder="What else would you like us to know?"
+                ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+                <button
+                    type="submit"
+                    class="submitButton"
+                    Send Inquiry> Submit
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
